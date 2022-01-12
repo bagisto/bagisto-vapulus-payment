@@ -1,0 +1,191 @@
+
+body {
+    background-color: #f8f9fa;
+
+    .vapulus-card-shadow {
+        width: 50rem;
+        margin: auto;
+        box-shadow:0 2px 25px 0 rgba(0,0,0,.15);
+        padding: 10px;
+        position: relative;
+        top: 10%;
+    
+        .row {
+            padding: 1.25rem;
+            margin: 0px;
+    
+            .close {
+                position: absolute;
+                right: 20px;
+    
+                &:focus {
+                    outline: 0px;
+                }
+            }
+    
+            .vapulus-logo {
+                height: 70px;
+                text-align: center;
+                margin-bottom: 10px;
+    
+                img {
+                    height: 52px;
+                    width: 178px;
+                }
+            }
+    
+            .contents {
+                padding: 25px 30px 0px 30px;
+                overflow: hidden;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                display: flex;
+    
+                .vapulus-alert {
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 0px 15px;
+    
+                    .alert {
+                        border: 1px solid transparent;
+                        border-radius: .25rem;
+                        width: 100%;
+                        padding: 10px;
+                        float: left;
+                        margin-bottom: 15px;
+                    }
+                    .alert-danger {
+                        color: #721c24;
+                        background-color: #f8d7da;
+                        border-color: #f5c6cb !important;
+                    }
+                }
+    
+                .form-group {
+                    margin-bottom: 15px;
+                    width: 100%;
+                    overflow: hidden;
+    
+                    .control-label {
+                        width: 100%;
+                    }
+    
+                    .field {
+                        width: 100%;
+    
+                        .show {
+                            display: block !important;
+                        }
+    
+                        .vapulus-errors {
+                            color: #eb1c26;
+                            display: none;
+                        }
+                    }
+    
+                    .error-field {
+                        .form-control {
+                            border: 1px solid #eb1c26;
+                        }
+                    }
+                }
+    
+                .btn {
+                    &:focus {
+                        outline: 0px;
+                    }
+                }
+    
+                .btn-primary {
+                    background-color: #0041ff;   
+                    color: #FFF;
+                    border-radius: 3px !important;
+                }
+    
+                .summary-heading {
+                    text-align: left;
+                }
+    
+                .row {
+                    padding: 0px 20px;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    width: 100%;
+                    display: inline;
+    
+                    .col-8 {
+                        width: 66.666667%;
+                        float: left;
+                    }
+    
+                    .col-4 {
+                        width: 33.333333%;
+                        float: left;
+                    }
+    
+                    .text-right {
+                        text-align: right !important;
+                    }
+                }
+    
+                .payable-amount {
+                    margin-top: 15px;
+                    padding-top: 15px;
+                    margin-bottom: 25px;
+                    border-top: 1px solid #e5e5e5;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .vapulus-card-shadow {
+            width: 95%;
+
+            .row {
+                .close {
+                    font-size: 40px;
+                }
+
+                .vapulus-logo {
+                    height: 100px;
+                    margin-bottom: 0px;
+
+                    img {
+                        height: 100px;
+                        width: 200px;
+                    }
+                }
+
+                .contents {
+                    padding: 0px 20px;
+
+                    .summary-heading {
+                        font-size: 30px;
+                        font-weight: 600;
+                        margin: 0px 0px 20px 0px;
+                    }
+
+                    .row {
+                        margin-bottom: 20px;
+                        font-size: 20px;
+
+                        div#child {
+                            font-size: 30px !important;
+                            padding-left: 12% !important;
+                        }
+                    }
+
+                    .payable-amount {
+                        border-top: 1px solid #333333;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+

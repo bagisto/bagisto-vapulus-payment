@@ -1,0 +1,32 @@
+{
+    "name": "bagisto/bagisto-vapulus-payment",
+    "description": "Bagisto vapulus payment method",
+    "keywords": [
+        "bagisto",
+        "vapulus-payment",
+        "payment"
+    ],
+    "homepage": "https://github.com/bagisto/bagisto-vapulus-payment",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vivek Sharma",
+            "email": "viveksh047@webkul.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Vapulus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Vapulus\\Providers\\VapulusServiceProvider"
+            ],
+            "aliases": { }
+        }
+    },
+    "minimum-stability": "dev"
+}
