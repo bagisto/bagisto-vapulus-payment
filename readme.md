@@ -1,6 +1,6 @@
 # Introduction
 
-Bagisto Vapulus Payment Add-on.
+Integrate Vapulus Payment Gateway with your laravel eCommerce store.
 
 It packs in lots of demanding features that allows your business to scale in no time:
 
@@ -12,7 +12,7 @@ It packs in lots of demanding features that allows your business to scale in no 
 
 - **Bagisto**: 1.3.2.
 
-## Installation with composer:
+## Installation :
 - Run the following command
 ```
 composer require bagisto/bagisto-vapulus-payment
@@ -37,43 +37,6 @@ php artisan config:cache
 ```
 php artisan vendor:publish
 ```
--> Press 0 and then press enter to publish all assets and configurations.
-
-
-## Installation without composer:
-
-- Unzip the respective extension zip and then merge "packages" folder into project root directory.
-
-- Goto config/app.php file and add following line under 'providers'
-
-```
-Webkul\Vapulus\Providers\VapulusServiceProvider::class
-```
-
-- Goto composer.json file and add following line under 'psr-4'
-
-```
-"Webkul\\Vapulus\\": "packages/Webkul/Vapulus/src"
-```
-
-- Run these commands below to complete the setup
-
-```
-composer dump-autoload
-```
-
-```
-php artisan migrate
-```
-
-```
-php artisan route:cache
-```
-
-```
-php artisan vendor:publish
-```
-
 -> Press 0 and then press enter to publish all assets and configurations.
 
 ## Configuration
